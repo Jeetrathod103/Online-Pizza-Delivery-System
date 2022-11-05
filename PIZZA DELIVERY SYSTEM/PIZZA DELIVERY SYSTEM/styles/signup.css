@@ -1,0 +1,176 @@
+body,
+html {
+  height: 100%;
+  background: #1c1e21;
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif !important;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+h1 {
+  font-weight: 900 !important;
+  font-size: 5rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.bg-img {
+  background-color: #1088ac6e;
+  background-image: url(../assets/signup-bg.jpg);
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  filter: brightness(35%);
+}
+
+.bg-filter {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+
+:root {
+  --primary: #1087ac;
+}
+
+.form-header {
+  background-color: white;
+  border-radius: 8px 8px 0px 0px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  color: black;
+  padding: 5rem;
+}
+
+.logo {
+  font-family: "Righteous", sans-serif;
+  font-size: 3rem !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-larger {
+  padding: 15px 40px !important;
+  border: 2px solid var(--primary) !important;
+  border-radius: 5px !important;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  background-color: var(--primary) !important;
+  color: white;
+  background-color: transparent;
+}
+
+.btn-larger:hover,
+.btn-larger:focus,
+.btn-larger:active,
+.btn-larger.active,
+.open .dropdown-toggle.btn-larger {
+  border-color: var(--primary);
+  color: rgb(255, 255, 255) !important;
+  background-color: #115164 !important;
+  background-color: var(--primary);
+  border-radius: 0;
+  max-width: 300px;
+}
+
+.mrgn-30-top {
+  margin-top: 30px;
+  display: flex;
+  justify-content: right;
+}
+
+#form {
+  color: #fff;
+  background-attachment: scroll;
+  min-height: 100%;
+}
+
+#userform {
+  background: #16708b;
+  margin: 20px 0 20px 0;
+  border-radius: 5px;
+  box-shadow: 2px 4px 10px rgb(56, 56, 56);
+}
+
+#userform .tab-content {
+  padding: 20px;
+}
+
+#userform .form-group {
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+#userform .form-group input,
+#userform .form-group textarea {
+  padding: 10px;
+}
+
+#userform .form-group input.form-control {
+  height: auto;
+  background-color: rgba(237, 235, 250, 0.1);
+  color: white;
+  font-size: 2rem;
+}
+
+#userform .form-control {
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+#userform .form-control:focus {
+  border-color: var(--primary);
+  box-shadow: none;
+}
+
+#userform::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+#userform #signup .form-group label {
+  position: relative;
+  -webkit-transform: translateY(35px);
+  -ms-transform: translateY(35px);
+  transform: translateY(35px);
+  left: 10px;
+  top: 0px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#userform #signup .form-group label.active {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  left: 2px;
+  font-size: 12px;
+}
+
+#userform #signup .form-group label.active .req {
+  opacity: 0;
+}
+
+#userform label.highlight {
+  color: #ffffff;
+}
